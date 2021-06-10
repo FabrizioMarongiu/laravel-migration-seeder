@@ -18,7 +18,7 @@ class CreateBoxesTable extends Migration
             $table->string('Location', 50);
             $table->text('Description', 100);
             $table->text('Duration', 50);
-            $table->boolean('Available')->default(1)
+            $table->boolean('Available')->default(1);
             $table->mediumInteger('Price')->nullable();
             $table->tinyInteger('Vote');
             $table->timestamps();            
